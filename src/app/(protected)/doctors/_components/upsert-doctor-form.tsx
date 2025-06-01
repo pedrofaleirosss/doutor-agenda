@@ -381,11 +381,7 @@ const UpsertDoctorForm = ({ onSuccess }: UpsertDoctorFormProps) => {
           />
 
           <DialogFooter>
-            <Button
-              type="submit"
-              disabled={upsertDoctorAction.isPending}
-              className="cursor-pointer"
-            >
+            <Button type="submit" disabled={upsertDoctorAction.isPending}>
               {upsertDoctorAction.isPending && (
                 <Loader2 className="h-4 w-4 animate-spin" />
               )}

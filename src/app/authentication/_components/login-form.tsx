@@ -120,7 +120,7 @@ const LoginForm = () => {
             <div className="w-full space-y-4">
               <Button
                 type="submit"
-                className="w-full cursor-pointer"
+                className="w-full"
                 disabled={form.formState.isSubmitting}
               >
                 {form.formState.isSubmitting ? (
@@ -131,7 +131,7 @@ const LoginForm = () => {
               </Button>
               <Button
                 variant="outline"
-                className="w-full cursor-pointer"
+                className="w-full"
                 onClick={handleGoogleLogin}
                 type="button"
               >
