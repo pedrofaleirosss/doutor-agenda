@@ -139,7 +139,7 @@ const UpsertDoctorForm = ({
       <DialogDescription>
         {doctor
           ? "Edite as informações do médico"
-          : "Preencha com as informações desse médico."}
+          : "Preencha com as informações do médico."}
       </DialogDescription>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -411,7 +411,11 @@ const UpsertDoctorForm = ({
           />
 
           <DialogFooter>
-            <Button type="submit" disabled={upsertDoctorAction.isPending}>
+            <Button
+              type="submit"
+              disabled={upsertDoctorAction.isPending}
+              className="w-full"
+            >
               {upsertDoctorAction.isPending && (
                 <Loader2 className="h-4 w-4 animate-spin" />
               )}
