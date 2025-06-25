@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 
 interface TopDoctorsProps {
-  doctors: {
+  topDoctors: {
     id: string;
     name: string;
     avatarImageUrl: string | null;
@@ -13,7 +13,7 @@ interface TopDoctorsProps {
   }[];
 }
 
-export default function TopDoctors({ doctors }: TopDoctorsProps) {
+export default function TopDoctors({ topDoctors }: TopDoctorsProps) {
   return (
     <Card className="mx-auto w-full">
       <CardContent>
@@ -26,7 +26,7 @@ export default function TopDoctors({ doctors }: TopDoctorsProps) {
 
         {/* Doctors List */}
         <div className="space-y-6">
-          {doctors.map((doctor) => (
+          {topDoctors.map((doctor) => (
             <div key={doctor.id} className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <Avatar className="h-10 w-10">
