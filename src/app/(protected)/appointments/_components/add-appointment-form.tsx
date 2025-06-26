@@ -287,7 +287,10 @@ const AddAppointmentForm = ({
                       selected={field.value}
                       onSelect={field.onChange}
                       disabled={(date) =>
-                        date < new Date() || !isDateAvailable(date)
+                        date <
+                          new Date(
+                            new Date().getTime() - 24 * 60 * 60 * 1000,
+                          ) || !isDateAvailable(date)
                       }
                       initialFocus
                       locale={ptBR}
@@ -320,9 +323,13 @@ const AddAppointmentForm = ({
                       <SelectItem
                         key={time.value}
                         value={time.value}
-                        disabled={!time.available}
+                        disabled={
+                          !time.available ||
+                          (dayjs(selectedDate).isSame(dayjs(), "day") &&
+                            time.value < dayjs().format("HH:mm"))
+                        }
                       >
-                        {time.label} {!time.available && "(Indisponível)"}
+                        {time.label} {!time.available && "(Já agendado)"}
                       </SelectItem>
                     ))}
                   </SelectContent>

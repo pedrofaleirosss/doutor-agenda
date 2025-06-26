@@ -43,6 +43,7 @@ const AppointmentsPage = async () => {
         patient: true,
         doctor: true,
       },
+      orderBy: appointmentsTable.date,
     }),
   ]);
 

@@ -25,7 +25,7 @@ export default function TopDoctors({ topDoctors }: TopDoctorsProps) {
         </div>
 
         {/* Doctors List */}
-        <div className="space-y-6">
+        <div className="max-h-[380px] space-y-6 overflow-y-auto pr-4">
           {topDoctors.map((doctor) => (
             <div key={doctor.id} className="flex items-center justify-between">
               <div className="flex items-center gap-4">
