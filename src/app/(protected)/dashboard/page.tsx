@@ -73,7 +73,7 @@ const DashboardPage = async ({ searchParams }: DashboardPageProps) => {
         <PageHeaderContent>
           <PageTittle>Dashboard</PageTittle>
           <PageDescription>
-            Tenha uma visão geral da sua clínica
+            Tenha uma visão geral da sua clínica.
           </PageDescription>
         </PageHeaderContent>
         <PageActions>

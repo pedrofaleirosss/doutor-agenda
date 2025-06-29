@@ -42,7 +42,7 @@ const PatientsPage = async () => {
         <PageHeaderContent>
           <PageTittle>Pacientes</PageTittle>
           <PageDescription>
-            Gerencie os pacientes da sua clínica
+            Gerencie os pacientes da sua clínica.
           </PageDescription>
         </PageHeaderContent>
         <PageActions>
