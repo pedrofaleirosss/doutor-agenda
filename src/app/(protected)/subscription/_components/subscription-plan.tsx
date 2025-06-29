@@ -12,13 +12,11 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 interface SubscriptionPlanProps {
   active?: boolean;
-  className?: string;
   userEmail: string;
 }
 
 const SubscriptionPlan = ({
   active = false,
-  className,
   userEmail,
 }: SubscriptionPlanProps) => {
   const router = useRouter();
@@ -50,8 +48,8 @@ const SubscriptionPlan = ({
   const features = [
     "Agendamentos ilimitados",
     "Métricas básicas",
-    "Cadastro de pacientes",
-    "Cadastro de médicos",
+    "Cadastro de pacientes (ilimitado)",
+    "Cadastro de médicos (ilimitado)",
     "Confirmação manual",
     "Suporte via e-mail",
   ];
@@ -67,7 +65,7 @@ const SubscriptionPlan = ({
   };
 
   return (
-    <Card className={className}>
+    <Card className="w-[350px]">
       <CardHeader>
         <div className="flex items-center justify-between">
           <h3 className="text-2xl font-bold text-gray-900">Essential</h3>

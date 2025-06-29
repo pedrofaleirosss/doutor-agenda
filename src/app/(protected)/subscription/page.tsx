@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/page-container";
 import { auth } from "@/lib/auth";
 
+import StarterPlan from "./_components/starter-plan";
 import SubscriptionPlan from "./_components/subscription-plan";
 
 const SubscriptionPage = async () => {
@@ -42,11 +43,13 @@ const SubscriptionPage = async () => {
       </PageHeader>
 
       <PageContent>
-        <SubscriptionPlan
-          className="max-w-[350px]"
-          active={session.user.plan === "essential"}
-          userEmail={session.user.email}
-        />
+        <div className="flex w-full flex-wrap gap-6">
+          <StarterPlan active={session.user.plan === null} />
+          <SubscriptionPlan
+            active={session.user.plan === "essential"}
+            userEmail={session.user.email}
+          />
+        </div>
       </PageContent>
     </PageContainer>
   );
