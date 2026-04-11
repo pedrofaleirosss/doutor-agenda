@@ -133,7 +133,12 @@ export function AppSidebar() {
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton size="lg">
                   <Avatar>
-                    <AvatarFallback>F</AvatarFallback>
+                    <AvatarFallback>
+                      {session.data?.user?.clinic?.name?.charAt(0)}
+                      {session.data?.user?.clinic?.name
+                        ?.split(" ")[1]
+                        ?.charAt(0)}
+                    </AvatarFallback>
                   </Avatar>
                   <div>
                     <p className="text-sm">
