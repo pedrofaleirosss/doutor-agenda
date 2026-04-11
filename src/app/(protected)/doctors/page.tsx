@@ -52,6 +52,13 @@ const DoctorsPage = async () => {
           {doctors.map((doctor) => (
             <DoctorCard doctor={doctor} key={doctor.id} />
           ))}
+
+          {doctors.length === 0 && (
+            <p className="text-muted-foreground text-center text-sm">
+              Nenhum médico encontrado. Adicione um médico para começar a
+              gerenciar sua clínica.
+            </p>
+          )}
         </div>
       </PageContent>
     </PageContainer>

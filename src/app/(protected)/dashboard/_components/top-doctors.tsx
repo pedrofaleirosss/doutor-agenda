@@ -52,6 +52,12 @@ export default function TopDoctors({ topDoctors }: TopDoctorsProps) {
               </div>
             </div>
           ))}
+
+          {topDoctors.length === 0 && (
+            <p className="text-muted-foreground text-center text-sm">
+              Nenhum médico encontrado.
+            </p>
+          )}
         </div>
       </CardContent>
     </Card>

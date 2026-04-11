@@ -88,6 +88,12 @@ export default function TopSpecialties({
               </div>
             );
           })}
+
+          {topSpecialties.length === 0 && (
+            <p className="text-muted-foreground text-center text-sm">
+              Nenhuma especialidade encontrada.
+            </p>
+          )}
         </div>
       </CardContent>
     </Card>
