@@ -1,6 +1,7 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 import {
   PageActions,
   PageContainer,
@@ -30,6 +31,7 @@ const SubscriptionPage = async () => {
 
   return (
     <PageContainer>
+      <Breadcrumb items={[{ label: "Outros" }, { label: "Planos" }]} />
       <PageHeader>
         <PageHeaderContent>
           <PageTittle>Planos</PageTittle>

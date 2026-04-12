@@ -2,6 +2,7 @@ import { eq } from "drizzle-orm";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { DataTable } from "@/components/ui/data-table";
 import {
   PageActions,
@@ -38,6 +39,9 @@ const PatientsPage = async () => {
 
   return (
     <PageContainer>
+      <Breadcrumb
+        items={[{ label: "Menu Principal" }, { label: "Pacientes" }]}
+      />
       <PageHeader>
         <PageHeaderContent>
           <PageTittle>Pacientes</PageTittle>

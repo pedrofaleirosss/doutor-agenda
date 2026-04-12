@@ -3,6 +3,7 @@ import { Calendar } from "lucide-react";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DataTable } from "@/components/ui/data-table";
 import {
@@ -69,6 +70,9 @@ const DashboardPage = async ({ searchParams }: DashboardPageProps) => {
 
   return (
     <PageContainer>
+      <Breadcrumb
+        items={[{ label: "Menu Principal" }, { label: "Dashboard" }]}
+      />
       <PageHeader>
         <PageHeaderContent>
           <PageTittle>Dashboard</PageTittle>
