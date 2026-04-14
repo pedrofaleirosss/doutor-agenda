@@ -50,7 +50,7 @@ const DoctorsPage = async () => {
       </PageHeader>
 
       <PageContent>
-        <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap justify-center gap-6 md:justify-start">
           {doctors.map((doctor) => (
             <DoctorCard doctor={doctor} key={doctor.id} />
           ))}

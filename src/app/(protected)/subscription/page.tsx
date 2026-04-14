@@ -45,7 +45,7 @@ const SubscriptionPage = async () => {
       </PageHeader>
 
       <PageContent>
-        <div className="flex w-full flex-wrap gap-6">
+        <div className="flex w-full flex-wrap justify-center gap-6 md:justify-start">
           <StarterPlan active={session.user.plan === null} />
           <SubscriptionPlan
             active={session.user.plan === "essential"}
