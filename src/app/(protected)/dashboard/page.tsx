@@ -103,7 +103,7 @@ const DashboardPage = async ({ searchParams }: DashboardPageProps) => {
               <div className="flex items-center gap-3">
                 <Calendar className="text-primary" />
                 <CardTitle className="text-base">
-                  Agendamentos de Hoje
+                  Agendamentos de hoje
                 </CardTitle>
               </div>
             </CardHeader>

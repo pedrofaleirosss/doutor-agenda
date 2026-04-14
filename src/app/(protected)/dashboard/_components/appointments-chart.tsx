@@ -63,7 +63,7 @@ const AppointmentsChart = ({
       <CardHeader className="flex flex-row items-center gap-2">
         <ChartNoAxesCombined className="text-primary" />
 
-        <CardTitle>Agendamentos e Faturamento</CardTitle>
+        <CardTitle>Agendamentos e faturamento</CardTitle>
       </CardHeader>
       <CardContent>
         <ChartContainer

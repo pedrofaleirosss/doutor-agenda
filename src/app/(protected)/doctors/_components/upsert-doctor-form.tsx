@@ -134,7 +134,7 @@ const UpsertDoctorForm = ({
   return (
     <DialogContent>
       <DialogHeader>
-        <DialogTitle>{doctor ? doctor.name : "Adicionar Médico"}</DialogTitle>
+        <DialogTitle>{doctor ? doctor.name : "Adicionar médico"}</DialogTitle>
       </DialogHeader>
       <DialogDescription>
         {doctor
@@ -419,7 +419,7 @@ const UpsertDoctorForm = ({
               {upsertDoctorAction.isPending && (
                 <Loader2 className="h-4 w-4 animate-spin" />
               )}
-              {doctor ? "Salvar" : "Adicionar"}
+              {doctor ? "Salvar" : "Adicionar médico"}
             </Button>
           </DialogFooter>
         </form>

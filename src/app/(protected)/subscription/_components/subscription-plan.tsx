@@ -106,9 +106,9 @@ const SubscriptionPlan = ({
             {createStripeCheckoutAction.isExecuting ? (
               <Loader2 className="h-4 w-4 animate-spin" />
             ) : active ? (
-              "Gerenciar Assinatura"
+              "Gerenciar assinatura"
             ) : (
-              "Fazer Assinatura"
+              "Fazer assinatura"
             )}
           </Button>
         </div>

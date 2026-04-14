@@ -348,7 +348,7 @@ const AddAppointmentForm = ({
               {createAppointmentAction.isPending && (
                 <Loader2 className="h-4 w-4 animate-spin" />
               )}
-              Criar
+              Criar agendamento
             </Button>
           </DialogFooter>
         </form>

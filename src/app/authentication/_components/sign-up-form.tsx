@@ -91,7 +91,7 @@ const SignUpForm = () => {
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <CardHeader>
-            <CardTitle>Criar Conta</CardTitle>
+            <CardTitle>Criar conta</CardTitle>
             <CardDescription>
               Insira seus dados e crie uma conta.
             </CardDescription>
@@ -148,7 +148,7 @@ const SignUpForm = () => {
               name="confirmPassword"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Confirmar Senha</FormLabel>
+                  <FormLabel>Confirmar senha</FormLabel>
                   <FormControl>
                     <Input
                       placeholder="Digite a sua senha novamente"
@@ -170,7 +170,7 @@ const SignUpForm = () => {
               {form.formState.isSubmitting ? (
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
               ) : (
-                "Criar Conta"
+                "Criar conta"
               )}
             </Button>
           </CardFooter>

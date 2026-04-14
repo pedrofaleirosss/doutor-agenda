@@ -55,7 +55,7 @@ const StarterPlan = ({ active = false }: StarterPlanProps) => {
             className="w-full !cursor-default hover:bg-transparent hover:text-inherit"
             variant="outline"
           >
-            Plano Padrão
+            Plano padrão
           </Button>
         </div>
       </CardContent>

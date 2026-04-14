@@ -100,7 +100,7 @@ const UpsertPatientForm = ({
     <DialogContent>
       <DialogHeader>
         <DialogTitle>
-          {patient ? patient.name : "Adicionar Paciente"}
+          {patient ? patient.name : "Adicionar paciente"}
         </DialogTitle>
         <DialogDescription>
           {patient
@@ -195,7 +195,7 @@ const UpsertPatientForm = ({
               {upsertPatientAction.isPending && (
                 <Loader2 className="h-4 w-4 animate-spin" />
               )}
-              {patient ? "Salvar" : "Adicionar"}
+              {patient ? "Salvar" : "Adicionar paciente"}
             </Button>
           </DialogFooter>
         </form>

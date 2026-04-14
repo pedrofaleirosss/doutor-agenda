@@ -107,7 +107,7 @@ const DoctorCard = ({ doctor }: DoctorCardProps) => {
           <DialogTrigger asChild>
             <Button className="w-full">
               <SquarePen />
-              Editar Médico
+              Editar médico
             </Button>
           </DialogTrigger>
           <UpsertDoctorForm
@@ -125,7 +125,7 @@ const DoctorCard = ({ doctor }: DoctorCardProps) => {
           <AlertDialogTrigger asChild>
             <Button variant="outline" className="w-full">
               <TrashIcon />
-              Deletar Médico
+              Deletar médico
             </Button>
           </AlertDialogTrigger>
           <AlertDialogContent>
