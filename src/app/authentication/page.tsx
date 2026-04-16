@@ -18,7 +18,7 @@ const AuthenticationPage = async () => {
   }
 
   return (
-    <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-4 px-4">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-4 px-4">
       <div className="relative h-[82px] min-h-[40px] w-full max-w-[400px]">
         <Image src="/logo.svg" alt="Logo" fill priority />
       </div>
