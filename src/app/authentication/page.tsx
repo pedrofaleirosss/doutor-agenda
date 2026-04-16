@@ -18,12 +18,14 @@ const AuthenticationPage = async () => {
   }
 
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center gap-4">
-      <Image src="/logo.svg" alt="Logo" width={400} height={400} />
-      <p className="text-primary w-[400px] text-lg font-medium">
+    <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-4 px-4">
+      <div className="relative h-[82px] min-h-[40px] w-full max-w-[400px]">
+        <Image src="/logo.svg" alt="Logo" fill priority />
+      </div>
+      <p className="text-primary w-full max-w-[400px] text-center text-lg font-medium sm:text-left">
         Gerencie sua clínica de forma simples e eficiente.
       </p>
-      <Tabs defaultValue="login" className="w-[400px]">
+      <Tabs defaultValue="login" className="w-full max-w-[400px]">
         <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="login">Login</TabsTrigger>
           <TabsTrigger value="register">Criar conta</TabsTrigger>
