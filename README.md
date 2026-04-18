@@ -1,36 +1,240 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🩺 Doutor Agenda
 
-## Getting Started
+Sistema completo de **gerenciamento de clínicas médicas**, desenvolvido com foco em produtividade, organização e experiência do usuário.
 
-First, run the development server:
+🔗 Deploy: https://doutor-agenda-tau.vercel.app/  
+📦 Repositório: https://github.com/pedrofaleirosss/doutor-agenda
+
+---
+
+## 📌 Sobre o projeto
+
+O Doutor Agenda é uma aplicação full stack desenvolvida em Next.js que permite gerenciar:
+
+- 📅 Agendamentos
+- 👨‍⚕️ Médicos
+- 🧑‍🤝‍🧑 Pacientes
+- 💰 Faturamento
+- 📊 Métricas e dashboard
+- 💳 Assinaturas (Stripe)
+
+O projeto foi desenvolvido durante os cursos do **Full Stack Club**, com diversas melhorias implementadas além do conteúdo original — como **responsividade**, organização de layout e refinamento de UX/UI.
+
+---
+
+## ✨ Funcionalidades
+
+### 🔐 Autenticação
+- Login com e-mail/senha
+- Login com Google
+- Proteção de rotas
+- Redirecionamento inteligente
+
+---
+
+### 📊 Dashboard
+- Visão geral da clínica
+- Métricas principais:
+  - Faturamento
+  - Agendamentos
+  - Pacientes
+  - Médicos
+- Gráfico de agendamentos e faturamento
+- Top médicos
+- Top especialidades
+- Agendamentos do dia
+- Filtro por intervalo de datas
+
+---
+
+### 📅 Agendamentos
+- Listagem em tabela
+- Criação de novos agendamentos
+- Relacionamento com médicos e pacientes
+
+---
+
+### 👨‍⚕️ Médicos
+- Cadastro de médicos
+- Edição de dados
+- Definição de:
+  - Dias de atendimento
+  - Horários
+  - Valor da consulta
+- Visualização em cards responsivos
+
+---
+
+### 🧑‍🤝‍🧑 Pacientes
+- Listagem de pacientes
+- Cadastro e edição
+- Informações básicas (nome, e-mail, telefone, etc.)
+
+---
+
+### 💳 Planos
+- Integração com Stripe
+- Simulação de assinatura
+- Planos disponíveis:
+  - Starter
+  - Essential
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+### Frontend
+- Next.js 15
+- React 19
+- Tailwind CSS 4
+- Radix UI
+- Lucide Icons
+- Recharts
+- React Hook Form
+- Zod
+
+### Backend / Fullstack
+- Next.js App Router
+- Drizzle ORM
+- PostgreSQL (Neon)
+- Better Auth
+
+### Outros
+- Stripe
+- React Query
+- Day.js / Date-fns
+- Nuqs (URL state)
+- Sonner (toasts)
+
+---
+
+## 🗄️ Banco de dados
+
+- PostgreSQL hospedado no **Neon**
+- ORM: **Drizzle**
+- Estrutura relacional com:
+  - usuários
+  - clínicas
+  - médicos
+  - pacientes
+  - agendamentos
+
+---
+
+## ⚙️ Como rodar o projeto
+
+### 1. Clone o repositório
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/pedrofaleirosss/doutor-agenda.git
+cd doutor-agenda
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Instale as dependências
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Configure as variáveis de ambiente
 
-## Learn More
+Crie um arquivo .env na raiz do projeto:
 
-To learn more about Next.js, take a look at the following resources:
+```
+DATABASE_URL=
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=
+STRIPE_SECRET_KEY=
+AUTH_SECRET=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Rode o projeto
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Acesse em:
 
-## Deploy on Vercel
+```
+http://localhost:3000
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📱 Responsividade
+
+O projeto foi adaptado para diferentes tamanhos de tela:
+
+- 📱 Mobile
+- 💻 Desktop
+- 🖥️ Telas grandes
+
+Inclui:
+
+- Grids responsivos
+- Tabelas com scroll horizontal
+- Layout flexível
+
+---
+
+## 📸 Preview das telas
+
+Principais telas do sistema:
+
+- 🔐 Login / Cadastro
+
+<img width="1920" height="1038" alt="image" src="https://github.com/user-attachments/assets/fc38f833-d6b9-40fe-8b8a-81c184cd2b34" />
+
+<img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/f116dcb5-716f-4fc5-8188-42fe7434b86b" />
+
+---
+
+- 📊 Dashboard
+
+<img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/8af0fdaf-ffdb-44ff-b5dd-acb097861e5e" />
+
+<img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/6cc26c11-84d8-4781-848b-7ae41fa67b8b" />
+
+---
+
+- 📅 Agendamentos
+
+<img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/f6d608d5-06cc-4603-b9c8-354fa9062c51" />
+
+---
+
+- 👨‍⚕️ Médicos
+
+<img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/05d429b8-1e02-4022-bb44-e6161f81a0cd" />
+
+---
+
+- 🧑‍🤝‍🧑 Pacientes
+
+<img width="1920" height="1039" alt="image" src="https://github.com/user-attachments/assets/c2e0137b-94e2-4461-a26e-c61a6fbb84ba" />
+
+---
+
+- 💳 Planos
+
+<img width="1920" height="1039" alt="image" src="https://github.com/user-attachments/assets/dc467b51-ca7c-4f0f-8e38-f59ea054f120" />
+
+---
+
+## 🔖 Padrão de Commits
+Ao longo de todo o projeto, todos os commits seguem o padrão Conventional Commits e foram escritos em inglês.
+
+Essa padronização traz benefícios como:
+
+- ✅ Histórico de commits limpo e organizado
+- ✅ Melhor entendimento das mudanças realizadas
+- ✅ Facilidade para manutenção e escalabilidade do projeto
+- ✅ Clareza na identificação do tipo de mudança (feat, fix, refactor, test, chore, etc.)
+
+---
+
+## 👨‍💻 Autor
+
+Feito por Pedro Faleiros
+
+- 💼 LinkedIn: https://www.linkedin.com/in/pedro-faleiros123/
+- 💻 GitHub: https://github.com/pedrofaleirosss
