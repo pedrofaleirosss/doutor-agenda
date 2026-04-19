@@ -183,7 +183,7 @@ Principais telas do sistema:
 - 🔐 Login / Cadastro
 
 <img width="1920" height="1038" alt="image" src="https://github.com/user-attachments/assets/fc38f833-d6b9-40fe-8b8a-81c184cd2b34" />
-
+<br>
 <img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/f116dcb5-716f-4fc5-8188-42fe7434b86b" />
 
 ---
@@ -191,7 +191,7 @@ Principais telas do sistema:
 - 📊 Dashboard
 
 <img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/8af0fdaf-ffdb-44ff-b5dd-acb097861e5e" />
-
+<br>
 <img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/6cc26c11-84d8-4781-848b-7ae41fa67b8b" />
 
 ---
@@ -199,24 +199,32 @@ Principais telas do sistema:
 - 📅 Agendamentos
 
 <img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/f6d608d5-06cc-4603-b9c8-354fa9062c51" />
+<br>
+<img width="1920" height="1038" alt="image" src="https://github.com/user-attachments/assets/e6ae3bf4-2977-47fc-aee3-1fe8c6ca35d2" />
 
 ---
 
 - 👨‍⚕️ Médicos
 
 <img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/05d429b8-1e02-4022-bb44-e6161f81a0cd" />
+<br>
+<img width="1920" height="1038" alt="image" src="https://github.com/user-attachments/assets/5d0729f7-3c12-4743-9425-55d315a9ecf5" />
 
 ---
 
 - 🧑‍🤝‍🧑 Pacientes
 
 <img width="1920" height="1039" alt="image" src="https://github.com/user-attachments/assets/c2e0137b-94e2-4461-a26e-c61a6fbb84ba" />
+<br>
+<img width="1912" height="1036" alt="image" src="https://github.com/user-attachments/assets/9a829bec-e2a0-45bf-98dd-73febfb346d2" />
 
 ---
 
 - 💳 Planos
 
 <img width="1920" height="1039" alt="image" src="https://github.com/user-attachments/assets/dc467b51-ca7c-4f0f-8e38-f59ea054f120" />
+<br>
+<img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/30081d8f-91e9-4dd9-923e-17df59287259" />
 
 ---
 
